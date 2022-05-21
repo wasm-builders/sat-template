@@ -7,8 +7,7 @@ USER gitpod
 
 RUN brew tap suborbital/subo && \
     brew install subo && \
-    brew install httpie && \
-    brew install --build-from-source slide
+    brew install httpie &&
 
 # ------------------------------------
 # Install Sat (Suborbital)
@@ -19,9 +18,3 @@ RUN git clone --depth=1 https://github.com/suborbital/sat.git && \
     sudo cp .bin/sat /usr/local/bin/sat && \
     cd .. && \
     rm -rf sat
-
-# ------------------------------------
-# Install Rust support
-# ------------------------------------
-#RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y && \
-#RUN curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh 
