@@ -7,7 +7,8 @@ USER gitpod
 
 RUN brew tap suborbital/subo && \
     brew install subo && \
-    brew install httpie &&
+    brew install httpie
+
 
 # ------------------------------------
 # Install Sat (Suborbital)
