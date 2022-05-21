@@ -12,9 +12,9 @@ RUN brew tap suborbital/subo && \
 # ------------------------------------
 # Install Sat (Suborbital)
 # ------------------------------------
-RUN git clone --depth=1 https://github.com/suborbital/sat.git && \
-    cd sat && \
-    go build -o .bin/sat -tags netgo,wasmtime . && \
-    sudo cp .bin/sat /usr/local/bin/sat && \
-    cd .. && \
-    rm -rf sat
+#RUN git clone --depth=1 https://github.com/suborbital/sat.git && \
+#    cd sat && \
+#    go build -o .bin/sat -tags netgo,wasmtime . && \
+#    sudo cp .bin/sat /usr/local/bin/sat && \
+#    cd .. && \
+#    rm -rf sat
