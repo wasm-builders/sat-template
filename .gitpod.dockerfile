@@ -7,8 +7,6 @@ USER gitpod
 
 RUN brew tap suborbital/subo && \
     brew install subo && \
-    brew install httpie
+    brew install httpie && \
+    brew install --build-from-source slides
     
-
-
- 

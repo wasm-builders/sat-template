@@ -28,3 +28,5 @@ curl -d 'Bob Morane' https://${app_name}.fly.dev
 
 curl -d '👋 Hello World 🌍' https://sha256-demo.fly.dev
 ```
+
+brew install slides
