@@ -1,15 +1,16 @@
 image: k33g/wasm-builders-sat:0.0.0
 
-
 tasks:
   - name: initialize
     init: |
       echo "🚀 initialize"
-      #sudo chown -R $USER .
 
 ports:
   - port: 8080
     visibility: public
+  - port: 3000
+    visibility: public
+
 
 vscode:
   extensions:
