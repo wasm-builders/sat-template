@@ -1,5 +1,7 @@
 image:
   file: .gitpod.dockerfile
+# image: k33g/wasm-builders-sat:0.0.0
+
 
 tasks:
   - name: initialize
