@@ -1,0 +1,1 @@
+use GET method
