@@ -1,37 +1,27 @@
 
 
-Run Galago runner with a process name
-
+## Run Sat with a process name
 
 ```bash
-processName="hello-function"
-wasmFile="functions/hello.wasm"
-wasmUrl="http://localhost:9999/hello/hello.wasm"
-bash -c "WASM_RUNNER_HTTP=9090 exec -a ${processName} ./galago-runner ${wasmFile} ${wasmUrl}"
+SAT_HTTP_PORT=8080 exec -a demo-go sat demo-go/demo-go.wasm &
+SAT_HTTP_PORT=8081 exec -a demo-rust sat demo-rust/demo-rust.wasm &
 ```
 
-```bash
-processName="hey-function"
-wasmFile="functions/hey.wasm"
-wasmUrl="http://localhost:9999/hey/hey.wasm"
-bash -c "WASM_RUNNER_HTTP=9091 exec -a ${processName} ./galago-runner ${wasmFile} ${wasmUrl}"
-```
 
-Get the list of the galago-runner processes
 
+> Get the list of the sat processes
 ```bash
-ps -fC galago-runner
+ps -fC sat
 
 # output
-UID          PID    PPID  C STIME TTY          TIME CMD
-gitpod     48797   44678  0 07:20 pts/4    00:00:00 hello-function functions/hello.wasm http://localhost:9999/hello/hello.wasm
-gitpod     48965   45151  0 07:20 pts/5    00:00:00 hey-function functions/hey.wasm http://localhost:9999/hey/hey.wasm
+gitpod      2501       1  0 11:11 ?        00:00:00 demo-go demo-go/demo-go.wasm
+gitpod      2875    2612  0 11:11 pts/1    00:00:00 demo-rust demo-rust/demo-rust.wasm
 ```
 
-Kill a galago-runner process by name
-
+> Kill a sat process by name
 ```bash
-pkill -f hello-function
+pkill -f demo-go
+pkill -f demo-rust
 ```
 
 
