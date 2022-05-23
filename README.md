@@ -1,5 +1,8 @@
 # sat-template
 
+> **TODO**:
+> - Restart the Rust server (Cmd+Shift+P)
+
 ## Create and build the runnable
 
 ```bash
