@@ -8,7 +8,12 @@ USER gitpod
 RUN brew tap suborbital/subo && \
     brew install subo && \
     brew install httpie && \
-    brew install --build-from-source slides
+    brew install bat && \
+    brew install exa && \
+    brew install marp-cli
+    #brew tap nicholasdille/tap && \
+    #brew install patat-bin
+    #brew install --build-from-source slides
 
 # ------------------------------------
 # Install Rust support
