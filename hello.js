@@ -3,7 +3,7 @@ const http = require('http')
 const requestListener = function (req, res) {
   console.log("👋 request from wasm module")
   res.writeHead(200);
-  res.end("👋 Hello World 🌍")
+  res.end("🖖 Hello World 🌍")
 }
 
 console.log("🌍 listening on 9090")

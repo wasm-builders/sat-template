@@ -1,3 +1,9 @@
+use suborbital::http;
+use suborbital::log;
+use std::str;
+
+// ==========
+
 let query_result = match http::get("http://localhost:9090", None) {
   Ok(data) => data,
   Err(e) => e.message.as_bytes().to_vec()

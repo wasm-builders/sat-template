@@ -31,7 +31,7 @@ subo create runnable demo-swift --lang swift
 cd demo-swift
 subo build .
 cd ..
-SAT_HTTP_PORT=8080 sat $(gp url 3000)/demo-go/demo-go.wasm
+SAT_HTTP_PORT=8080 sat $(gp url 3000)/demo-swift/demo-swift.wasm
 curl -d 'Bob Morane' http://localhost:8080; echo ""
 ```
 
@@ -50,4 +50,6 @@ SAT_HTTP_PORT=8080 sat demo-rust/demo-rust.wasm
 curl -d 'Bob Morane' http://localhost:8080; echo ""
 ```
 
-> SAT_HTTP_PORT=8080 exec -a demo-go sat demo-go/demo-go.wasm &
+## 4th demo (JavaScript function)
+
+> 🚧 work in progress
