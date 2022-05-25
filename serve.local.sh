@@ -1,0 +1,7 @@
+#!/bin/bash
+http_port=$1
+wasm_module=$2
+
+cmd="SAT_HTTP_PORT=${http_port} sat ${wasm_module}/${wasm_module}.wasm"
+echo $cmd
+eval "$cmd"
